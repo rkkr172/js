@@ -1,0 +1,20 @@
+﻿<html>
+<body>
+<script>
+
+	function Vuln(desc,cveid) {
+	this.desc = desc;
+	this.cveid = cveid;
+	this.detAlert = function() 
+		{
+		alert(this.desc+' : '+this.cveid);
+		}
+	}
+	var V1 = new Vuln("XSS in HTML" , 1234 );
+//	alert(V1.desc);
+//	alert(V1.cveid);
+	V1.detAlert();
+</script>
+</body>
+<html>
+

@@ -1,0 +1,21 @@
+﻿<html>
+	<head> </head>
+<body>
+<script>
+//	function CallMe() { alert("Hello,I'm a function"); }
+//	CallMe();
+
+//	function sum(num1,num2) { 
+//	var add = num1 + num2 ; 
+	//document.write("Sum of "+num1+" And "+num2+" is = "+add); 
+//	return add;
+//	}
+//	var s = sum(560,25);
+//	alert(s);
+	var global_a = 100;
+	function myScope(){ var global_a = 200; return global_a ;}
+	var x = myScope();
+	alert(x);
+</script>
+</body>
+<html>

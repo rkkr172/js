@@ -1,0 +1,17 @@
+<html>
+<body> <h1 id="temp"> Hello JS </h1>
+	<script>
+		try {
+//		DoesNotExist();
+		throw "It is a custom Exception";
+	}
+		catch(err) {
+//		document.write("<br>Error Occure : "+err.message);
+		document.write("<br>Here, throw Error : "+err);
+	}
+		finally {
+		document.write("<BR><br>Finally Block : I'm Finally Executed in both Cases.");
+	}
+	</script>
+</body>
+<html>

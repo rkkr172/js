@@ -1,0 +1,22 @@
+﻿<html>
+<body>
+<h1 id="title"> I'm h1 tag for Title</h1>
+<h2>First h2 Tags </h2>
+<h2>Second h2 Tags </h2>
+   <script>
+//	var var1 = document.getElementById("title");
+//	alert("Alert");
+//	var1.innerHTML = "Here is innerHTML."
+	
+	var h2tags = document.getElementsByTagName("h2");
+	alert(h2tags.length);
+
+	h2tags[0].innerHTML = "I'm Replacing at h2 Tag";
+
+	for( i=0; i < h2tags.length ; i++)
+	{ alert(h2tags[i].innerHTML);	}
+
+   </script>
+</body>
+<html>
+
